@@ -50,9 +50,5 @@
       "git add"
     ]
   },
-  "standard-version": {
-    "skip": {
-      "tag": true
-    }
-  }
+  "standard-version": {}
 }
