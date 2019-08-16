@@ -4,6 +4,7 @@
   "description": "约定式提交、自动生成changelog",
   "main": "index.js",
   "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "commit": "git-cz",
     "release": "standard-version",
     "release:major": "standard-version -r major -n",
@@ -24,7 +25,9 @@
     "cz-conventional-changelog": "3.0.2",
     "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
-    "standard-version": "^7.0.0"
+    "standard-version": "^7.0.0",
+    "ts-lint": "^4.5.1",
+    "typescript": "^3.5.3"
   },
   "config": {
     "commitizen": {
