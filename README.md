@@ -71,3 +71,21 @@ yarn add hooks lint-staged -D
 ```sh
 yarn add standard-version conventional-changelog -D
 ```
+
+```json
+# package.json
+
+{
+  scripts: {
+      "commit": "git-cz",
+      "release": "standard-version",
+      "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+      "release:major": "standard-version -r major -n",
+      "release:minor": "standard-version -r minor -n",
+      "release:patch": "standard-version -r patch -n",
+      "prerelease:alpha": "standard-version -p alpha -n",
+      "prerelease:beta": "standard-version -p beta -n",
+      "prerelease:rc": "standard-version -p rc -n"
+  }
+}
+```
