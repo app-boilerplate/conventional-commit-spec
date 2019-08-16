@@ -1,6 +1,6 @@
 {
   "name": "conventional-commit-spec",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "约定式提交、自动生成changelog",
   "main": "index.js",
   "scripts": {
