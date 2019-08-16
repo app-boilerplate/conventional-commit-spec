@@ -1,0 +1,21 @@
+{
+  "name": "conventional-commit-spec",
+  "version": "1.0.0",
+  "description": "约定式提交、自动生成changelog",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "repository": "git@github.com:app-boilerplate/conventional-commit-spec.git",
+  "author": "Day",
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
