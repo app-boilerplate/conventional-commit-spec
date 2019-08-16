@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> 约定式提交、自动生成 changelog
+> 约定式提交、格式校验、自动生成 changelog
 
 ## 安装
 
@@ -64,4 +64,10 @@ yarn add hooks lint-staged -D
     }
   }
 }
+```
+
+## 自动生成 changelog
+
+```sh
+yarn add standard-version conventional-changelog -D
 ```
