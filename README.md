@@ -34,3 +34,34 @@ yarn add cz-conventional-changelog -D
   }
 }
 ```
+
+## 约定式提交格式校验
+
+```sh
+yarn add @commitlint/config-conventional @commitlint/cli -D
+
+yarn add hooks lint-staged -D
+```
+
+```json
+# package.json
+
+{
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "commitlint": {
+      "extends": [
+        "@commitlint/config-conventional"
+      ]
+    },
+    "lint-staged": {
+      "src/**/*.{js,ts,css,vue,tsx,jsx}": [
+        "npm run lint",
+        "git add"
+      ]
+    }
+  }
+}
+```
